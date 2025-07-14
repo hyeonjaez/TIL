@@ -1,0 +1,29 @@
+## finalize()의 위험성
+- finalize 는 가바지 컬렉터가 객체에 더 이상 참조가 없다고 판단할 때 해당 객체에 대해 이 메서드가 호출 된다. 
+<img width="376" height="48" alt="image" src="https://github.com/user-attachments/assets/a3a4da51-7023-47bf-8d3f-4e7ee8141867" />
+
+Object의 finalize() 메서드이다. 하지만 java 9 부터 Deprecated 처리 되었다. 
+
+이유를 알아보자 
+
+### 🧠 개념 설명
+
+- 언제 GC가 실행될지 모르기 때문에 finalize()가 언제 실행 될 지 알 수 없다.
+- finalize()가 정의된 객체는 GC가 한번 더 추적하고 관리 해서 GC 부담이 증가 되고 처리 지연이 발생된다.
+- 객체는 finalize() 중에 다시 참조될 수 있어 객체 소멸이 지연되거나 누락되는 문제가 발생 할 수 있다. 이는 곧 메모리 누수의 원인이 되기도 하다.
+- finalize() 에서 Exception이 발생해도 JVM 은 무시하고 진행하기 때문에 디버깅이 어렵다
+
+<img width="246" height="69" alt="image" src="https://github.com/user-attachments/assets/90933aa2-f7ac-4a8a-a265-655628dd737d" />
+
+- 일단 위 사진 처럼 성능 저하가 발생한다.
+- 하지만 속도 저하보다 더 중요한건 시스템의 예측 불가능성과 위험성 인것 이다. 
+
+
+<br/>
+
+---
+### ✅ 한줄로 설명 하기
+
+- finalize() 는 GC가 한번 더 추적하과 관리를 해서 GC 부담이 증가되고 처리지연이 발생하고
+- 메서드가 실행중에 다시 객체 참조가 일어날 수 있어 메모리 누수가 발생할 수 있고
+- 언제 실행될지도 몰라서 예측 불가능성한 위험이 있다.
