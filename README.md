@@ -6,3 +6,15 @@
 
 ## 📌 Study Strategy
 - 개념 공부할 때 한문장으로 표현 해보면서 하자
+
+## 📚 참고 자료
+TIL 작성 시 참고하거나 읽은 책 목록입니다.
+
+### 📖 책
+
+- [자바의 신 Vol 1: 기초 문법편](https://product.kyobobook.co.kr/detail/S000210144588)
+- [자바의 신 Vol 2: 주요 API 응용편](https://product.kyobobook.co.kr/detail/S000210144131)
+- [최범균의 JSP 2.3 웹 프로그래밍: 기초부터 중급까지](https://product.kyobobook.co.kr/detail/S000001248937)
+- [스프링 입문을 위한 자바 객체 지향의 원리와 이해](https://product.kyobobook.co.kr/detail/S000001628116)
+- [Real MySQL 8.0 (1권)](https://product.kyobobook.co.kr/detail/S000001766482)
+- [자바 ORM 표준 JPA 프로그래밍](https://product.kyobobook.co.kr/detail/S000000935744)
