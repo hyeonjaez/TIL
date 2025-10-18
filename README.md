@@ -19,3 +19,5 @@ TIL 작성 시 참고하거나 읽은 책 목록입니다.
 - [스프링 입문을 위한 자바 객체 지향의 원리와 이해](https://product.kyobobook.co.kr/detail/S000001628116)
 - [Real MySQL 8.0 (1권)](https://product.kyobobook.co.kr/detail/S000001766482)
 - [자바 ORM 표준 JPA 프로그래밍](https://product.kyobobook.co.kr/detail/S000000935744)
+- [이펙티브 자바](https://product.kyobobook.co.kr/detail/S000001033066)
+- [단위 테스트](https://product.kyobobook.co.kr/detail/S000001805070)
